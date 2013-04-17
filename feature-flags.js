@@ -1,7 +1,6 @@
 /*! Javascript Feature Flags
-    Jay Fienberg, MIT License 2012
+    Jay Fienberg, MIT License 2013
     https://github.com/jayf/javascript-feature-flags
-
 */
 
 /*
