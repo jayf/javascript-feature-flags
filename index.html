@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Javascript Feature Flags Demo</title>
+
+    <!-- this is the required script -->
+	<script src="feature-flags.js"></script>
+
+	<style type="text/css">
+	    body { font-family: sans-serif; color: #333; }
+	    code { font-size: 20px; }
+	    .lil, .lil a { color: #999; }
+	</style>
+</head>
+<body>
+    <h1>Javascript Feature Flags Demo</h1>
+
+    <h2>Flags That Are Set on this Page:</h2>
+    <p>These flags have been set via cookies, URL query strings, URL fragments and/or the domain name.</p>
+    <code></code>
+    <!--
+        Note that Javascript Feature Flags does not use jQuery
+        jQuery is just used for testing on this page
+    -->
+	<script src="//code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script>
+	    var c = ff.flags.length,
+    	    s = '',
+	        i;
+
+	    for ( i=0; i < c; i++ ) {
+	        s += ff.flags[i] + ' ';
+	    }
+	    $('code').append( s );
+	</script>
+	<h2>Example URLs with Flags</h2>
+	<ul>
+    	<li><a href="index.html?reload=1#ff,Jimi">#ff,Jimi</a></li>
+    	<li><a href="index.html?reload=2#ff,Elvin,Ringo">#ff,Elvin,Ringo</a></li>
+    	<li><a href="index.html?reload=3&amp;ff=Eddie,Sonny">&amp;ff=Eddie,Sonny</a></li>
+    	<li><a href="index.html?reload=4&amp;ff=Jimmy&amp;ff=Cecil">&amp;ff=Jimmy&amp;ff=Cecil</a></li>
+    </ul>
+
+    <h2>To Do</h2>
+    <p>I'd like to add some cookie examples, and maybe also a demo of the test domain feature.</p>
+    <hr>
+
+    <p class="lil">This code was originally written by Jay Fienberg of <a href="http://juxtaprose.com/">Juxtaprose</a> in April 2013.</p>
+</body>
+</html>
