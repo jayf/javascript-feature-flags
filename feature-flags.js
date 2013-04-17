@@ -1,8 +1,9 @@
 /*! Javascript Feature Flags
-    Jay Fienberg, MIT License 2013
     https://github.com/jayf/javascript-feature-flags
+    MIT License 2013
 */
 
+var ff = ff || {};
 /*
     Setting a global variable, ff, here.
 
@@ -10,7 +11,6 @@
     but change it again at the bottom to match
     what you have here.
 */
-var ff = ff || {};
 
 (function(app, options) {
     "use strict";
