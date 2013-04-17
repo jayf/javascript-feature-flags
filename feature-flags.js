@@ -4,8 +4,11 @@
 */
 
 /*
-    You can change this ff any variable name,
-    but change it again, to match at the bottom
+    Setting a global variable, ff, here.
+
+    You can change this! It can be any name,
+    but change it again at the bottom to match
+    what you have here.
 */
 var ff = ff || {};
 
