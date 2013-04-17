@@ -1,11 +1,11 @@
-javascript-feature-flags
+Javascript Feature Flags
 ========================
 
-Gets Feature Flags set in URL fragment, query string, browser cookies, and/or test domain name.
+This Javascript function gets Feature Flags set in the URL (as fragment and/or query string), set in a browser cookie, and/or via matching a domain name (e.g., localhost, or your test domain name).
 
 ##What are Feature Flags
 
-A *Feature Flag* is a setting to turn a feature on or off. This is often used to turn on experimental features in your code, e.g., for testing.
+A *Feature Flag* is a setting you use to turn a feature on or off. This is often used to turn on experimental features in your code, e.g., for testing.
 
 ###Example
 
@@ -19,9 +19,9 @@ if ( ff.flag('crazy') ) {
 
 ##And This Respository Is...
 
-This is a Javascript function that reads feature flags in URL Fragments, query strings, browser cookies, and/or a test domain name. These are only "on" flags--they do not represent values or states beyond "on."
+This is a Javascript function that reads feature flags in URL Fragments, query strings, browser cookies, and/or a test domain name. These are only "on" flags--they do not represent values or states beyond "on".
 
-The idea is: when a flag is absent, it is *off.* When a flag is present, it is *on.*
+The idea is: when a flag is absent, it is *off*, When a flag is present, it is *on*.
 
 The function then allows you to test for specific flags being present / on, using the above **ff.flag('your-flag-name')** syntax.
 
@@ -43,7 +43,7 @@ Note that this library doesn't help you set flags per se--it just reads them.
 
 ##Advanced Usage
 
-Take a look at the feature-flags.js file. This file can be integrated into your existing Javascript library, and you may change the global variable name (which is ff), or attach this to an existing global, and override any of the following:
+Take a look at the [feature-flags.js](feature-flags.js) file. This file can be integrated into your existing Javascript library, and you may change the global variable name (which is ff), or attach this function to an existing global, and override any of the following:
 
 ```javascript
 (ff, {
@@ -55,9 +55,9 @@ methods: ['cookie', 'domain', 'hash', 'query'])
 
 ##Flag Syntax
 
-The flags that this function recognizes need to use a consistent name format. This is the **keyname** option, which defaults to **ff**.
+This function recognizes as flags parameters that use a consistent "key" name format. The **keyName** defaults to **ff**, but you can easily change this via the  [Advance Usage](#advanced-usage) options.
 
-Note that comma separated values are always turned into separate flags
+Note that comma separated values are always turned into separate flags.
 
 Syntax examples (todo: document a bit more)
 
@@ -67,7 +67,7 @@ All valid:
 
 ````
 ?ff=Kurt
-?ff=Bertold&ff=Kurt
+?ff=Bertolt&ff=Kurt
 ?ff=Elvin,Ringo
 ?ff=Jimi,Eddie&ff=George,Sonny
 ````
@@ -83,16 +83,21 @@ All valid:
 
 ###Cookies
 
-Set a cookie with the keyName (e.g., **ff**) and one value, or comma separated values
+The function will set flags based on a cookie set with the keyName (e.g., **ff**). The cookie may contain either a single value, or multiple comma separated values.
 
 
 ###Test Domain
 
-By default localhost will set a debug flag. Via the Advance Usage examples above, you can change this to match your test domain name, and change the flag that is set.
+By default, if the page is being browsed on localhost, a flag named debug will be set. Via the [Advance Usage](#advanced-usage) examples above, you can change this to match your test domain name, and change the flag that is set.
+
 
 ##Example
 
 See the [index.html](http://jayf.github.io/javascript-feature-flags/index.html) page for more examples.
+
+##Enhancements
+
+Some ideas are in [issues/enhancements](https://github.com/jayf/javascript-feature-flags/issues?labels=enhancement&page=1&state=open) -- feel free to add suggestions, or fork and submit your own.
 
 
 ##License
