@@ -92,7 +92,7 @@ By default localhost will set a debug flag. Via the Advance Usage examples above
 
 ##Example
 
-See the index.html page for more examples.
+See the [index.html](http://jayf.github.io/javascript-feature-flags/index.html) page for more examples.
 
 
 ##License
