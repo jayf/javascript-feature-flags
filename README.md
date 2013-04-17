@@ -83,12 +83,13 @@ All valid:
 
 ###Cookies
 
-Set a cookie with the keyName (e.g., **ff**) and one value, or comma separated values
+The function will set flags based on a cookie set with the keyName (e.g., **ff**). The cookie may contain either a single value, or multiple comma separated values.
 
 
 ###Test Domain
 
-By default localhost will set a debug flag. Via the Advance Usage examples above, you can change this to match your test domain name, and change the flag that is set.
+By default, if the page is being browsed on localhost, a flag named debug will be set. Via the [Advance Usage](#advanced-usage) examples above, you can change this to match your test domain name, and change the flag that is set.
+
 
 ##Example
 
