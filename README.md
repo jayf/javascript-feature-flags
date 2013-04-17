@@ -43,7 +43,7 @@ Note that this library doesn't help you set flags per se--it just reads them.
 
 ##Advanced Usage
 
-Take a look at the [feature-flags.js](https://github.com/jayf/javascript-feature-flags/blob/master/feature-flags.js) file. This file can be integrated into your existing Javascript library, and you may change the global variable name (which is ff), or attach this to an existing global, and override any of the following:
+Take a look at the [feature-flags.js](feature-flags.js) file. This file can be integrated into your existing Javascript library, and you may change the global variable name (which is ff), or attach this to an existing global, and override any of the following:
 
 ```javascript
 (ff, {
