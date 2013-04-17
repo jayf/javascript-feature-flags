@@ -11,6 +11,7 @@
 	    body { font-family: sans-serif; color: #333; }
 	    code { font-size: 20px; }
 	    .lil, .lil a { color: #999; }
+	    .note { display: none; }
 	</style>
 </head>
 <body>
@@ -20,8 +21,10 @@
     A quick demo of <a href="https://github.com/jayf/javascript-feature-flags">Javascript Feature Flags</a> code.
     </p>
 
+    <div class="note">
     <h2>Flags That Are Set on this Page:</h2>
     <p>These flags have been set via cookies, URL query strings, URL fragments and/or the domain name.</p>
+    </div>
     <code></code>
     <!--
         Note that Javascript Feature Flags does not use jQuery
@@ -36,7 +39,12 @@
 	    for ( i=0; i < c; i++ ) {
 	        s += ff.flags[i] + ' ';
 	    }
-	    $('code').append( s );
+
+	    if (s) {
+    	    $('code').append( s );
+    	    $('.note').css('display','block');
+	    }
+
 	</script>
 	<h2>Example URLs with Flags</h2>
 	<ul>
@@ -44,6 +52,7 @@
     	<li><a href="index.html?reload=2#ff,Elvin,Ringo">#ff,Elvin,Ringo</a></li>
     	<li><a href="index.html?reload=3&amp;ff=Eddie,Sonny">&amp;ff=Eddie,Sonny</a></li>
     	<li><a href="index.html?reload=4&amp;ff=Jimmy&amp;ff=Cecil">&amp;ff=Jimmy&amp;ff=Cecil</a></li>
+    	<li><a href="index.html?reload=5&amp;ff=Duke,Count&amp;ff=Ellington,Basie">&amp;ff=Duke,Count&amp;ff=Ellington,Basie</a></li>
     </ul>
 
     <h2>To Do</h2>
