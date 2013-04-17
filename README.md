@@ -95,6 +95,10 @@ By default, if the page is being browsed on localhost, a flag named debug will b
 
 See the [index.html](http://jayf.github.io/javascript-feature-flags/index.html) page for more examples.
 
+##Enhancements
+
+Some ideas are in [issues/enhancements](https://github.com/jayf/javascript-feature-flags/issues?labels=enhancement&page=1&state=open) -- feel free to add suggestions, or fork and submit your own.
+
 
 ##License
 
