@@ -1,7 +1,7 @@
 javascript-feature-flags
 ========================
 
-Get Feature Flags set in URL fragment, query string, browser cookies, and/or test domain name.
+Gets Feature Flags set in URL fragment, query string, browser cookies, and/or test domain name.
 
 ##What are Feature Flags
 
