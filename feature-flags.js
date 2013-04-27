@@ -138,8 +138,6 @@ var ff = ff || {};
     keyName: 'ff',
     testDomain: 'localhost',
     testDomainFlag: 'debug',
-    methods: ['cookie', 'domain', 'hash', 'query'])
-}
-
+    methods: ['cookie', 'domain', 'hash', 'query'] })
 
 */
