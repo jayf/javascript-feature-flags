@@ -99,13 +99,7 @@ See the [index.html](http://jayf.github.io/javascript-feature-flags/index.html) 
 
 Some ideas are in [issues/enhancements](https://github.com/jayf/javascript-feature-flags/issues?labels=enhancement&page=1&state=open) -- feel free to add suggestions, or fork and submit your own.
 
+## See Also: PHP Feature Flags
 
-##License
+I've also created a simple Feature Flags class in PHP, see [PHP Feature Flags](https://github.com/jayf/php-feature-flags). *Note that these two libraries don't have 100% matching flag syntax--that's a TODO. Currently, the JS library's flag syntax is superset of the PHP's.*
 
-Copyright (c) 2013 Jay Fienberg
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
