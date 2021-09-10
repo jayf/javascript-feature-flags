@@ -7,7 +7,7 @@ This Javascript function gets Feature Flags set in the URL (as fragment and/or q
 
 A *Feature Flag* is a setting you use to turn a feature on or off. This is often used to turn on experimental features in your code, e.g., for testing.
 
-## #Example
+### Example
 
 ```html
 if ( ff.flag('exp') ) {
@@ -91,7 +91,7 @@ The function will set flags based on a cookie set with the keyName (e.g., **ff**
 By default, if the page is being browsed on localhost, a flag named debug will be set. Via the [Advance Usage](#advanced-usage) examples above, you can change this to match your test domain name, and change the flag that is set.
 
 
-##Example
+## Example
 
 See the [index.html](http://jayf.github.io/javascript-feature-flags/index.html) page for more examples.
 
