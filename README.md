@@ -10,8 +10,8 @@ A *Feature Flag* is a setting you use to turn a feature on or off. This is often
 ## #Example
 
 ```html
-if ( ff.flag('crazy') ) {
-    doCrazyExperiment();
+if ( ff.flag('exp') ) {
+    doExperiment();
 } else {
     doReallySafeStuff();
 }
